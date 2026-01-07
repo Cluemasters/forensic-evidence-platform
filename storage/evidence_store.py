@@ -1,12 +1,10 @@
 import os
 import shutil
+from custody.custody_log import log_event
 
 VAULT_PATH = "storage/evidence_vault"
 
 def store_evidence(file_path):
-    """
-    Store evidence securely in the evidence vault.
-    """
     if not os.path.exists(file_path):
         raise FileNotFoundError("Evidence file not found")
 
@@ -20,5 +18,8 @@ def store_evidence(file_path):
         raise FileExistsError("Evidence already exists in vault")
 
     shutil.copy2(file_path, destination)
+
+    # Chain of custody entry
+    log_event(file_name, "EVIDENCE STORED")
 
     return destination
