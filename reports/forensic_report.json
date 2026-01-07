@@ -1,0 +1,36 @@
+{
+    "evidence_items": [
+        {
+            "file_name": "test_file.txt",
+            "file_size_bytes": 25,
+            "created_time": "2026-01-07T22:30:20.457275",
+            "modified_time": "2026-01-07T22:32:11.337548",
+            "sha256_hash": "e820655a84a2416edc5164209bbe838741a7e71a67228d44cb96c2bcfbd22daf"
+        },
+        {
+            "file_name": "autopsy_report.txt",
+            "file_size_bytes": 31,
+            "created_time": "2026-01-07T23:06:01.282975",
+            "modified_time": "2026-01-07T23:06:01.282975",
+            "sha256_hash": "e0352724252364cce3e42b3ecbe50226435528e33e7833ece15e1517f004cd61"
+        },
+        {
+            "file_name": "volatility_pslist.txt",
+            "file_size_bytes": 27,
+            "created_time": "2026-01-07T23:06:01.289916",
+            "modified_time": "2026-01-07T23:06:01.289916",
+            "sha256_hash": "e2b43ca167bbf8c5ab940483c48c54395f0d8680a98eb7033e74c77515bc0a2a"
+        }
+    ],
+    "chain_of_custody": [
+        "2026-01-07T17:22:08.084756 | investigator | test_file.txt | TEST LOG ENTRY\n",
+        "2026-01-07T17:24:16.742687 | investigator | test_file.txt | INTEGRITY CHECK FAILED - HASH MISMATCH\n",
+        "2026-01-07T17:26:05.354953 | investigator | test_file.txt | EVIDENCE STORED\n",
+        "2026-01-07T17:26:16.676666 | investigator | test_file.txt | EVIDENCE VERIFIED\n",
+        "2026-01-07T17:28:27.769016 | investigator | test_file.txt | EVIDENCE ACCESSED\n",
+        "2026-01-07T17:36:29.967224 | investigator | autopsy_report.txt | EVIDENCE STORED\n",
+        "2026-01-07T17:36:29.970120 | investigator | autopsy_report.txt | EVIDENCE VERIFIED\n",
+        "2026-01-07T17:36:29.974147 | investigator | volatility_pslist.txt | EVIDENCE STORED\n",
+        "2026-01-07T17:36:29.976168 | investigator | volatility_pslist.txt | EVIDENCE VERIFIED\n"
+    ]
+}
